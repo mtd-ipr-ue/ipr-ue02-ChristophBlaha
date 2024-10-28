@@ -7,9 +7,8 @@ public class ue02_3 {
         double x = In.readDouble();
         Out.print("y-Koordinate: ");
         double y = In.readDouble();
-
         double z = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
-        Out.println(z);
+
         if (x > 0 && y > 0 && z > 4) {
             Out.println("Der Punkt liegt außerhalb des Kreises");
         } else {
