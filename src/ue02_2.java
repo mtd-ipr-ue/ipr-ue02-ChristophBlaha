@@ -15,11 +15,6 @@ public class ue02_2 {
             return;
         }
 
-        if (month < 1 || month > 12) {
-            Out.println("Fehler: Bitte ein gültiges Monat eingeben");
-            return;
-        }
-
         switch (month) {
             case 1, 3, 5, 7, 8, 10, 12:
                 amountDays = 31;
@@ -34,6 +29,11 @@ public class ue02_2 {
                 } else {
                     amountDays = 28;
                 }
+                break;
+            default:
+                Out.println("Fehler: Bitte ein gültiges Monat eingeben");
+                return;
+
         }
 
         Out.print("Dieser Monat hat " + amountDays + " Tage");
